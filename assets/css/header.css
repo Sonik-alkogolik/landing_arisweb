@@ -1,0 +1,75 @@
+/* Основной контейнер */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Меню слева */
+.header__menu {
+    border: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border-radius: 12px;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border-radius: 12px;
+    padding: 0 3px;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #2D3748;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.header__link:hover {
+    background-color:#2D3748;
+    color:#fff;
+}
+
+/* .header__link_active {
+    background-color:#2D3748;
+    color:#fff;
+} */
+
+/* Кнопки справа */
+.header__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.header__button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header__button:hover {
+    background-color: #000;
+    color: #fff;
+}
