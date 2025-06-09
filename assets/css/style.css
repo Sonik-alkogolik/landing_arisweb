@@ -79,6 +79,17 @@ h2 {
   background-size: 100% 100%;
 }
 
+.container.personal_account_driver {
+  max-width: 100%;
+  width: 100%;
+  background-color: #EDF2F7;
+}
+.container.personal_account_buyer {
+  max-width: 100%;
+  width: 100%;
+  background-color: #EDF2F7;
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 20px;
@@ -531,34 +542,6 @@ h2 {
 }
 
 /* ===== personal_account_logist ===== */
-
-.logist_btn_dawn_wrapp {
-  margin: 0 auto;
-  margin-top: 42px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logist_btn_dawn_arrow {
-  max-width: 48px;
-  width: 100%;
-  height: 48px;
-  background: url(/assets/img/arrow_dawn_icon.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.logist_btn_dawn_wrapp a {
-  padding-top: 8px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  vertical-align: middle;
-  color: #2D3748;
-}
-
 .personal_account_logist_wrapp {
   max-width: 1160px;
   width: 100%;
@@ -567,7 +550,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 55px;
 }
+
+
+
 
 
 .personal_account_logist_column_block {
@@ -756,6 +743,244 @@ h2 {
   margin-right: 8px;
 }
 
-.logist_btn_dawn_wrapp {}
+.logist_btn_dawn_wrapp {
+  margin: 0 auto;
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.logist_btn_dawn_arrow {}
+.logist_btn_dawn_arrow {
+  max-width: 48px;
+  width: 100%;
+  height: 48px;
+  background: url(/assets/img/arrow_dawn_icon.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.logist_btn_dawn_wrapp a {
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #2D3748;
+}
+
+
+.personal_account_driver_wrapp {
+  padding-top: 100px;
+  max-width: 1160px;
+  width: 100%;
+  /* height: 594px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.personal_account_driver_column_block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.driver_left_column {
+  max-width: 524px;
+  background-color: #FFFFFF;
+
+  border-radius: 32px;
+}
+
+.driver_left_title {
+  padding: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.driver_left_column p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1A202C;
+  padding-top: 12px;
+}
+
+.driver_download_div {
+  margin-top: 56px;
+  max-width: 484px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.driver_download_div a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
+.driver_download_div button {
+  margin-top: 56px;
+  max-width: 372px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171923;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #FFFFFF;
+  border-radius: 12px;
+}
+
+.driver_btn_dawn_wrapp {
+  margin: 0 auto;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.driver_right_column {
+  max-width: 604px;
+  width: 100%;
+  height: 256px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 32px;
+  background-color: #FFFFFF;
+
+}
+
+.driver_right_column_list ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.driver_right_column_list ul li {
+  border-radius: 16px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #EDF2F7;
+  backdrop-filter: blur(8px);
+  margin-bottom: 8px;
+}
+
+.driver_right_column_list ul li p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #171923;
+  padding-left: 3px;
+}
+
+
+.driver__right_item {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+.driver__right_item img {
+  border-radius: 32px;
+  display: flex;
+}
+
+.driver_right_column_list {
+  max-width: 251px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.driver_img_right_block {
+  max-width: 54px;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+
+.driver_btn_dawn_arrow {
+  max-width: 48px;
+  width: 100%;
+  height: 48px;
+  background: url(/assets/img/arrow_dawn_icon.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+
+
+/* ===== personal_account_buyer ===== */
+
+.personal_account_buyer_wrapp {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  background-color: #EDF2F7;
+}
+
+.personal_account_buyer_title {
+  max-width: 550px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 42px;
+}
+
+.personal_account_buyer_title h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.personal_account_buyer_title p {
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  color: #1A202C;
+}
