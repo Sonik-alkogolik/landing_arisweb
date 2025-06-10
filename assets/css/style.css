@@ -88,6 +88,8 @@ h2 {
   max-width: 100%;
   width: 100%;
   background-color: #EDF2F7;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1200px) {
@@ -893,7 +895,7 @@ h2 {
   letter-spacing: 0%;
   vertical-align: middle;
   color: #171923;
-  padding-left: 3px;
+ margin-left: 12px;
 }
 
 
@@ -921,9 +923,10 @@ h2 {
 }
 
 .driver_img_right_block {
-  max-width: 54px;
+  max-width: 40px;
   width: 100%;
-  height: 54px;
+  height: 40px;
+  margin-left: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -947,13 +950,12 @@ h2 {
 /* ===== personal_account_buyer ===== */
 
 .personal_account_buyer_wrapp {
-  padding-top: 100px;
+  max-width: 1160px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
-  width: 100%;
-  background-color: #EDF2F7;
+
 }
 
 .personal_account_buyer_title {
@@ -983,4 +985,100 @@ h2 {
   text-align: center;
   vertical-align: middle;
   color: #1A202C;
+}
+
+.personal_account_buyer_column_block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.buyer_left_column {
+  max-width: 671px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buyer_left_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyer_left_list ul {
+  width: 100%;
+  display: flex;
+}
+
+.buyer_left_list  ul li {
+  position: relative;
+  border-radius: 16px;
+  max-width: 216px;
+  width: 100%;
+  height: 213px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buyer_text_block {
+  max-width: 197px;
+  width: 100%;
+  height: 42px;
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  border-image-source: linear-gradient(90deg, #FFFFFF 0%, #EDF2F7 100%);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #171923;
+  background: #FFFFFFA6;
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+.buyer_right_column {
+  max-width: 473px;
+  width: 100%;
+  height: 213px;
+  background-color: #FFFFFF;
+}
+.buyer_right_column_list ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 22px;
+}
+.buyer_right_column_list ul li{
+  max-width: 441px;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #EDF2F7;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.buyer_img_right_block {
+  max-width: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buyer_left_column_deskription {
+}
+.buyer_btn_dawn_wrapp {
+}
+.buyer_btn_dawn_arrow {
 }
