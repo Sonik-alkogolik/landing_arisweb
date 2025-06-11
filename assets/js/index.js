@@ -32,6 +32,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
+
+      const bodyChildren = document.body.children;
+      
+     
+      const elementsToRemove = Array.from(bodyChildren).slice(4, 11);
+      
+      // Удаляем все найденные элементы
+      elementsToRemove.forEach(element => {
+          if (element.tagName === 'SECTION') {
+              element.remove();
+          }
+      });
+
   });
 
  
