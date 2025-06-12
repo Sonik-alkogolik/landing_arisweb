@@ -772,6 +772,7 @@ section.hero_block {
   vertical-align: middle;
   color: #171923;
   padding-left: 16px;
+  margin-top: 0;
 }
 
 .logist_right_column_button_wrapp button {
@@ -1872,41 +1873,41 @@ input.footer_group_input {
 
 @media (max-width: 1220px) {
   .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
 
   .container.hero_block_bottom {
-    width: 90%;
+    width: 95%;
     background: none;
   }
 
   .container.personal_account_logist {
-    width: 90%;
+    width: 100%;
   }
 
   .container.personal_account_driver {
-    width: 90%;
+    width: 95%;
   }
 
   .container.personal_account_buyer {
-    width: 90%;
+    width: 95%;
   }
 
   .container.payment_block_bottom {
-    width: 90%;
+    width: 95%;
   }
 
   .container.industry_solutions {
-    width: 90%;
+    width: 95%;
   }
 
   .container.form_wrapp {
-    width: 90%;
+    width: 95%;
   }
 
   .container.footer_wrapp {
-    width: 90%;
+    width: 95%;
   }
 
   .hero_block_item_left h1 {
@@ -1961,6 +1962,7 @@ input.footer_group_input {
   .provider_list_right {
     max-width: 100%;
     height: auto;
+    margin-top: 20px;
   }
   .provider_list_right_item {
     width: 100%;
@@ -1970,6 +1972,48 @@ input.footer_group_input {
     max-width: 500px;
     width: 100%;
   }
+  .provider_list_bottom_block button {
+    margin-left: 50px;
+  }
+
+  .provider_list_bottom_block {
+    position: relative;
+    height: 125px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .provider_list_bottom_provider_item {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 45px;
+    right: 50px;
+  }
+
+  .personal_account_logist_column_block {
+    flex-direction: column-reverse;
+  }
+  .logist_right_column {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .logist_left_column {
+    max-width: 100%;
+  }
+ 
+  .logist_left_column ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logist_left_column ul li {
+    width: 95%;
+  }
+  .personal_account_logist_column_block {
+    width: 95%;
+  }
+  
+ 
 }
 
 @media(max-width:1145px) {
@@ -1978,7 +2022,6 @@ input.footer_group_input {
     max-width: 640px;
     width: 100%;
   }
-
  
 }
 
@@ -2036,13 +2079,42 @@ input.footer_group_input {
   .provider_list_left {
     max-width: 860px;
     width: 100%;
-    display: grid
-;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 16px;
-}
+  }
+  .provider_list_bottom_provider_item {
+    right: 20px;
+    max-width: 50%;
+  }
+  .provider_list_bottom_block {
+    height: 175px;
+    align-items: center;
+  }
 
+  .provider_list_bottom_provider_item {
+    position: initial;
+  }
+
+  .provider_list_bottom_block button {
+    margin-left: 0;
+  }
+  .provider_list_bottom_provider_item {
+    max-width: 95%;
+  }
+  .provider_list_bottom_block p {
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .provider_list_bottom_provider_item a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .logist_right_column_button_wrapp p {
+    
+  }
 }
 
 @media(max-width:685px) {
@@ -2050,11 +2122,61 @@ input.footer_group_input {
     font-size: 2rem;
     max-width: 560px;
   }
-
-  h2 {
-    font-size: 1.8rem;
+  .hero_block_item_left p {
+    width: 480px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 18px;
   }
-}
+  /* h2 {
+    font-size: 1.8rem;
+  } */
+  .provider_list_left {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .provider_list_left_item_text p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .provider_list_left_item_text {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .provider_list_left_item_img {
+    margin: 8px;
+    max-width: 70px;
+  }
+  .provider_list_left_item_text span {
+    text-align: center;
+  }
+  .personal_account_provider_wrapp {
+    margin-top: 50px;
+  }
+  .provider_list_right_item p {
+    font-size: 14px;
+  }
+  .provider_list_right_item p {
+    width: 46%;
+    margin: 0 auto;
+  }
+  .provider_list_right_item img {
+    width: 49%;
+  }
+  .provider_list_bottom_block button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .container.personal_account_logist {
+    margin-top: 50px;
+  }
+  .logist_left_column ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  }
 
 @media(max-width:600px) {
   .hero_block_item_left h1 {
@@ -2062,12 +2184,7 @@ input.footer_group_input {
     max-width: 410px;
   }
 
-  .hero_block_item_left p {
-    width: 480px;
-    font-size: 12px;
-    line-height: 18px;
-    padding-top: 18px;
-  }
+ 
 
   .hero_block_item_btn_provider {
     font-size: 12px;
@@ -2173,7 +2290,13 @@ input.footer_group_input {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .provider_list_right_item {
+    flex-direction: column;
+  }
+  .provider_list_right_item img {
+    max-width: 90%;
+    width: 100%;
+  }
 }
 
 

@@ -229,6 +229,25 @@
     color: #4A5568;
   }
 
+  @media(max-width:1145px){
+    .header__link {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .header__list {
+      justify-content: space-around;
+      width: 100%;
+    }
+    .header__link {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px 0px;
+    }
+    .header__menu {
+      width: 63%;
+    }
+  }
+
 @media (max-width: 1024px) {
   .header__menu {
     display: none;
