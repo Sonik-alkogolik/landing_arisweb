@@ -1852,12 +1852,12 @@ input.footer_group_input {
 
 @media (max-width: 1220px) {
   .container {
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
   }
 
   .container.hero_block_bottom {
-    width: 95%;
+    width: 98%;
     background: none;
   }
 
@@ -1874,19 +1874,19 @@ input.footer_group_input {
   }
 
   .container.payment_block_bottom {
-    width: 95%;
+    width: 98%;
   }
 
   .container.industry_solutions {
-    width: 95%;
+    width: 98%;
   }
 
   .container.form_wrapp {
-    width: 95%;
+    width: 98%;
   }
 
   .container.footer_wrapp {
-    width: 95%;
+    width: 98%;
   }
 
   .hero_block_item_left h1 {
@@ -1989,7 +1989,7 @@ input.footer_group_input {
     width: 95%;
   }
   .personal_account_logist_column_block {
-    width: 95%;
+    width: 98%;
   }
   .personal_account_driver_wrapp {
     width: 98%;
@@ -2051,6 +2051,41 @@ input.footer_group_input {
     font-size: 12px;
     line-height: 18px;
   }
+  .payment_block_content {
+    flex-direction: column;
+  }
+  .payment_block_bottom_item_left {
+    max-width: 100%;
+    width: 100%;
+    height: 350px;
+  }
+  .payment_block_bottom_item_right {
+    max-width: 100%;
+  }
+  .payment_block_bottom_item_right_list {
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 100%;
+  }
+  
+  .payment_block_bottom_item_right_list ul {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .payment_block_bottom_item_right_list span {
+    order: 2;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .payment_block_bottom_item_right_list button {
+    order: 3;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 @media(max-width:1180px) {
@@ -2080,6 +2115,9 @@ input.footer_group_input {
   .buyer_text_block {
     height: 25px;
     font-size: 10px;
+  }
+  .payment_block_top_text {
+    text-align: center;
   }
  
 }
@@ -2211,7 +2249,15 @@ input.footer_group_input {
     max-width: 100%;
     text-align: center;
   }
+  .payment_block_bottom_item_left {
+    height: 280px;
+}
 
+.payment_block_bottom_item_right_list ul li p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
 
 }
 
@@ -2219,6 +2265,7 @@ input.footer_group_input {
   .driver_download_div {
     max-width: 520px;
   }
+
 }
 
 
@@ -2309,7 +2356,12 @@ input.footer_group_input {
   
   .driver_left_column p {
     font-size: 14px;
+    line-height: 20px;
     text-align: center;
+  }
+  .personal_account_buyer_title p {
+    font-size: 14px;
+    line-height: 20px;
   }
   .driver_download_div {
     margin-top: 40px;
@@ -2324,10 +2376,35 @@ input.footer_group_input {
   }
   .buyer_deskription_text p {
     font-size: 14px;
+    line-height: 20px;
   }
   .buyer_deskription_text {
     margin-bottom: 20px;
     height: 80px;
+  }
+  .container.payment_block_bottom {
+    margin-top: 50px;
+  }
+  .payment_block_bottom_item_left {
+    height: 256px;
+  }
+  .payment_block_bottom_item_left_list {
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+  .payment_block_bottom_item_left {
+    background: url(/assets/img/payment_block_img_mobile.png);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+  }
+  .payment_block_bottom_item_left_list ul {
+    max-width: 98%;
+  }
+  .payment_block_bottom_item_left_list ul li br {
+    display: none;
+  }
+  .payment_block_bottom_item_left {
+    height: 215px;
   }
 }
 
@@ -2426,6 +2503,10 @@ input.footer_group_input {
     height: 40px;
     margin-left: 5px;
   }
+  .payment_block_bottom_item_left_list ul li {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 
@@ -2441,6 +2522,10 @@ input.footer_group_input {
   }
 
   h2 {
+    font-size: 1.5rem;
+    line-height: 28px;
+  }
+  .personal_account_buyer_title h2 {
     font-size: 1.5rem;
     line-height: 28px;
   }
@@ -2505,6 +2590,40 @@ input.footer_group_input {
   .buyer_deskription_text p br{
     display: none;
   }
+  .buyer_deskription_button button {
+    font-size: 14px;
+    height: 40px;
+    line-height: 10px;
+  }
+  .payment_block_bottom_item_right {
+    max-width: 98%;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .payment_block_bottom_item_right_list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .payment_block_bottom_item_right_list ul {
+    flex-direction: column;
+  }
+  .payment_block_bottom_item_right_list button {
+    width: 100%;
+  }
+  .payment_block_bottom_item_right_list button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .payment_block_bottom_item_right_list button {
+    font-size: 14px;
+    height: 40px;
+  }
+  .payment_block_bottom_item_right_list span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
 }
 
 

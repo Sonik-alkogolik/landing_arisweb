@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const bodyChildren = document.body.children;
       
      
-      const elementsToRemove = Array.from(bodyChildren).slice(7, 11);
+      const elementsToRemove = Array.from(bodyChildren).slice(8, 11);
       
       // Удаляем все найденные элементы
       elementsToRemove.forEach(element => {
