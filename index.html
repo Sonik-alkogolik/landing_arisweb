@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/index.js"></script>
 </head>
 
@@ -50,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section  class="hero_block">
+    <section  class="hero_block" >
         <div class="container">
             <div class="hero_block_wrapp">
                 <div class="hero_block_top_container">
@@ -79,11 +82,11 @@
             </div>
         </div>
     </section>
-    <section>
+    <section >
         <div class="container hero_block_bottom">
             <div class="hero_block_bottom_container">
 
-                <div class="hero_block_bottom_item_left">
+                <div class="hero_block_bottom_item_left" data-aos="fade-right">
                     <span class=about_project_top_text>
                         <img src="/assets/img/icon-block-project.svg" alt="about_project">
                         О проекте
@@ -101,7 +104,7 @@
                         Посмотреть демо
                     </button>
                 </div>
-                <div class="hero_block_bottom_item_right">
+                <div class="hero_block_bottom_item_right" data-aos="fade-left">
                     <p>
                         Платформа для взаимодействия промышленных поставщиков, логистов и покупателей с безопасной
                         сделкой и встроенной логистикой 4PL уровня.
@@ -139,7 +142,8 @@
 
         </div>
     </section>
-    <section>
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="container">
             <div class="personal_account_provider_wrapp">
                 <div class="personal_account_provider_title">
@@ -238,7 +242,8 @@
         </div>
     </section>
 
-    <section>
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="container personal_account_logist">
             <div class="personal_account_logist_wrapp">
                 <div class="personal_account_logist_column_block">
@@ -318,7 +323,8 @@
         </div>
     </section>
 
-    <section>
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="container personal_account_driver">
             <div class="personal_account_driver_wrapp">
                 <div class="personal_account_driver_column_block">
@@ -384,7 +390,8 @@
             </div>
         </div>
     </section>
-    <section>
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="container personal_account_buyer">
             <div class="personal_account_buyer_wrapp">
                 <div class="personal_account_buyer_title">
@@ -465,7 +472,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section >
         <div class="container payment_block_bottom">
             <div class="payment_block_bottom_container">
                 <div class="payment_block_title">
@@ -478,7 +485,7 @@
                     </h2>
                 </div>
                 <div class="payment_block_content">
-                    <div class="payment_block_bottom_item_left">
+                    <div class="payment_block_bottom_item_left"  data-aos="fade-right">
 
                         <div class="payment_block_bottom_item_left_list">
                             <ul>
@@ -664,6 +671,13 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        AOS.init({
+            duration: 2000 
+        });
+      </script>
 </body>
 
 </html>

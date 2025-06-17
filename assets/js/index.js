@@ -32,19 +32,42 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-
-      const bodyChildren = document.body.children;
-      
-     
-      const elementsToRemove = Array.from(bodyChildren).slice(10, 11);
-      
-      // Удаляем все найденные элементы
-      elementsToRemove.forEach(element => {
-          if (element.tagName === 'SECTION') {
-              element.remove();
-          }
-      });
-
+   
   });
 
- 
+  document.addEventListener("DOMContentLoaded", function () {
+    const logistBtn = document.querySelector('.logist_btn_dawn_wrapp');
+    const driverBtn = document.querySelector('.driver_btn_dawn_wrapp');
+    const buyerBtn = document.querySelector('.personal_account_driver'); 
+  
+    if (logistBtn) {
+      logistBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector('.personal_account_logist_column_block');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  
+    if (driverBtn) {
+      driverBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector('.personal_account_driver_wrapp');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  
+    if (buyerBtn) {
+      buyerBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector('.personal_account_buyer_wrapp');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  });
+   
